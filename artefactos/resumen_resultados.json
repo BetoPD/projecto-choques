@@ -1,0 +1,39 @@
+{
+  "Datos": {
+    "accidentes CDMX 2019-2025": 50767,
+    "% S0/S1/S2": "73.4% / 23.4% / 3.1%",
+    "registros excluidos": 1
+  },
+  "Champion": {
+    "modelo": "XGBoost",
+    "ventana": "B: 2022-2023 (pospandemia)",
+    "umbrales": {
+      "p_s2_alta": 0.14,
+      "score_alta": 50.241,
+      "score_media": 10.754
+    }
+  },
+  "Prueba 2025": {
+    "Macro F1": 0.5684,
+    "Recall S1": 0.5498,
+    "Recall S2": 0.4864,
+    "Precision S2": 0.1761,
+    "PR-AUC S2": 0.1922,
+    "ROC-AUC víctimas": 0.8996
+  },
+  "Hipótesis": {
+    "H0 rechazada (hay señal)": true,
+    "Macro F1 vs baseline": "+0.2404 [+0.2197, +0.2593]",
+    "H0_modelo rechazada (XGBoost mejor)": true,
+    "Macro F1 XGBoost − LogReg": "+0.0283 [+0.0162, +0.0398]",
+    "Reducción de costo por caso LogReg − XGBoost": "+0.0277 [+0.0007, +0.0534]",
+    "Macro F1 ventana A − B (2025)": "-0.0037 [-0.0150, +0.0081]"
+  },
+  "Operación 2025": {
+    "S2 en prioridad alta": "57.2%",
+    "S1/S2 subpriorizados": "15.6%",
+    "% de casos en alta": "16.7%",
+    "costo relativo vs aleatorio": "0.739 vs 1.851",
+    "reducción de carga ponderada fuera de zona": "35.9%"
+  }
+}
